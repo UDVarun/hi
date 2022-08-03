@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <style>
+        form{
+            max-width: 300px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 25px;
+            background: linear-gradient(135deg,#9b59b6,#17b7e6);
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg,#17b7e6,#9b59b6);
+            padding: 10px;
+        }
+        h1{
+            font-weight: bold;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .forget-password{
+            margin-right: 20px;
+        }
+        a{
+            font-weight: bold;
+            color: rgb(96, 96, 96);
+            transition: color 0.15s;
+            cursor: pointer;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: red;
+        }
+        button{
+            min-height: 36px;
+            width: 105px;
+            border-radius: 8px;
+            border: 2px solid rgb(46, 46, 245);
+            background-color: #fff;
+            color: rgb(46, 46, 245);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 36px;
+            transition: color 0.15s,background-color 0.15s,opacity 0.15s;
+            cursor: pointer;
+        }
+        button:hover{
+            color: #fff;
+            background-color: rgb(46, 46, 245);
+        }
+        button:active{
+           opacity: 0.8;
+        }
+        .email{
+            height: 28px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+            border: 1px solid;
+            border-radius: 8px;
+        }
+        .password{
+            height: 28px;
+            margin-top: 6px;
+            margin-bottom: 0;
+            border: 1px solid;
+            border-radius: 8px;
+        }
+       .forget-password{
+        color: white;
+       }
+       .register{
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <form class="page" action="pesit.html" method="post">
+        <h1>Login Page</h1>
+        <label for="Email">Email:</label><br>
+        <input class="email" type="email" id="Email" name="Email" placeholder="abcd@gmail.com"><br>
+        <label for="password">Password:</label><br>
+        <input class="password" type="password" id="password" name="password" required><br><br>
+        <a class="forget-password" href="">ForgetPassword</a>
+        <a class="register" href="register.html">Register</a><br><br>
+        <button>Sign Up</button>
+
+
+
+    </form>
+</body>
+</html>
