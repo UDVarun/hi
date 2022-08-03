@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+   <style>
+    .heading-div{
+        width: 100%;
+        min-height: 90px;
+        background-color:rgb(16, 168, 36);
+        color: white;
+        line-height: 90px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 38px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .main.div{
+        box-sizing: border-box;
+        background-color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+       
+    }
+    .nav-div{
+        width: 320px;
+        min-height: 500px;
+        float: left;
+        background-color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .department-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .dep-div{
+        color: white;
+    }
+    .department-div:hover{
+        opacity: 0.8;
+    }
+    .administration-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .adm-div{
+        color: white;
+    }
+    .administration-div:hover{
+        opacity: 0.8;
+    }
+    .gallery-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .gall-div{
+        color: white;
+    }
+    .gallery-div:hover{
+        opacity: 0.8;
+    }
+    .placement-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s; 
+    }
+    .plac-div{
+        color: white;
+    }
+    .placement-div:hover{
+        opacity: 0.8;
+    }
+    .department2-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .dep2-div{
+        color: white;
+    }
+    .department2-div:hover{
+        opacity: 0.8;
+    }
+    .administration2-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .adm2-div{
+        color: white;
+    }
+    .administration2-div:hover{
+        opacity: 0.8;
+    }
+    .gallery2-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .gall2-div{
+        color: white;
+    }
+    .gallery2-div:hover{
+        opacity: 0.8;
+    }
+    .placement2-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .plac2-div{
+        color: white;
+    }
+    .placement2-div:hover{
+        opacity: 0.8;
+    }
+    .department3-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .dep3-div{
+        color: white;
+    }
+    .department3-div:hover{
+        opacity: 0.8;
+    }
+    .administration3-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s; 
+    }
+    .adm3-div{
+        color: white;
+    }
+    .administration3-div:hover{
+        opacity: 0.8;
+    }
+    .gallery3-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .gall3-div{
+        color: white;
+    }
+    .gallery3-div:hover{
+        opacity: 0.8;
+    }
+    .placement3-div{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color:rgb(16, 168, 36) ;
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        transition: opacity 0.15s;
+    }
+    .plac3-div{
+        color: white;
+    }
+    .placement3-div:hover{
+        opacity: 0.8;
+    }
+    .content-div{
+        min-height: 620px;
+        width: 700px;
+        background-color: white;
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+    .image1-div{
+        
+            width: 600px;
+            height: 250px;
+    }
+    .image-div{
+            border: 4px solid rgb(16, 168, 36);
+            padding: 30px 30px;
+            background-color: rgb(185, 183, 183);
+            margin-left: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+           
+        }
+        .mca{
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .text{
+            color: rgb(96, 96, 96);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 20px;
+
+        }
+        .aside-div{
+            background-color: rgb(199, 196, 196);
+            min-height: 600px;
+            width: 296px;
+            margin-left: 6px;
+            float: left;
+        }
+        .text1{
+            text-align: center;
+            color: rgb(96, 96, 96);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .text2{
+            text-align: center;
+            color: rgb(96, 96, 96);
+            line-height: 20px;
+            margin-top: 0;
+        }
+        .footer-div{
+            background-color:rgb(16, 168, 36);
+            width: 100%;
+            min-height: 30px;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 0;
+            margin-bottom: 50px;
+            color: white;
+            padding: 10px 10px;
+        }
+   </style>
+</head>
+<body>
+   <div class="heading-div">
+        PESITM College of Engineering
+   </div>
+   <div class="main-div">
+        <div class="nav-div">
+            <div class="department-div">
+                <a class="dep-div" href="">Departements</a>
+            </div>
+            <div class="administration-div">
+                <a class="adm-div" href="">Administration</a>
+            </div>
+            <div class="gallery-div">
+                <a class="gall-div" href="">Gallery</a>
+            </div>
+            <div class="placement-div">
+                <a class="plac-div" href="">Placement</a>
+            </div>
+            <div class="department2-div">
+                <a class="dep2-div" href="">Departements</a>
+            </div>
+            <div class="administration2-div">
+                <a class="adm2-div" href="images/free2.jpg">Administration</a>
+            </div>
+            <div class="gallery2-div">
+                <a class="gall2-div" href="">Gallery</a>
+            </div>
+            <div class="placement2-div">
+                <a class="plac2-div" href="">Placement</a>
+            </div>
+            <div class="department3-div">
+                <a class="dep3-div" href="">Departements</a>
+            </div>
+            <div class="administration3-div">
+                <a class="adm3-div" href="">Administration</a>
+            </div>
+            <div class="gallery3-div">
+                <a class="gall3-div" href="">Gallery</a>
+            </div>
+            <div class="placement3-div">
+                <a class="plac3-div" href="">Placement</a>
+            </div>
+        </div>
+        <div class="content-div">
+           <p class="mca">Computer Science And Engineering - CSE</p> 
+           <div class="image1.div"><img class="image-div" src="images/jnnce.jpg" width="600px" height="250px" alt="college image">
+                <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam 
+                eveniet. Voluptate, suscipit voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam eveniet. Voluptate, suscipit 
+                voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam eveniet. Voluptate, suscipit 
+                voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?
+                </p>
+            </div>
+        </div>
+        <div class="aside-div">
+            <p class="text1">About</p>
+            <p class="text2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam 
+                eveniet. Voluptate, suscipit voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam eveniet. Voluptate, suscipit 
+                voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam eveniet. Voluptate, suscipit 
+                voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eum ipsam laborum eaque aliquam 
+                eveniet. Voluptate, suscipit voluptatibus quis ipsam tenetur minima ipsa illo impedit hic laboriosam cumque consequatur dicta?
+  
+            </p>
+        </div>
+   </div>
+   <div class="footer-div">
+    &#169; copyright Rakesh G H
+   </div>
+</body>
+</html>
